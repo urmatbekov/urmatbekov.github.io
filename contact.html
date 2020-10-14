@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <title>Bootstrap project</title>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [54.98, 82.89],
+                zoom: 13
+            });
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главное <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item  ">
+                    <a class="nav-link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Галарея</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="container contact-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="map" style="width:500px; height:400px"></div>
+            </div>
+            <div class="col-md-6">
+                <div style="background: #fff; padding: 10px; border-radius: 10px; margin-top: 10px;">
+                    <p><strong>Контакты</strong></p>
+
+                    <p>Адрес: г. Бишкек, ул. Ибраимова 115</p>
+
+                    <p>Почтовый индекс: 720021</p>
+
+                    <p>Приемная компании «SkyMobile»: +996 (775) 588 000 (режим работы: понедельник - пятница с 9:00 до
+                        18:00, обеденный перерыв с 13:00 до 14:00, суббота и воскресенье выходные)</p>
+
+                    <p>Контакт-центр: <a href="tel:*611"><u><strong>*611</strong></u></a> (для абонентов Beeline),
+                        <strong><u><a href="tel:+996(775)580611">+996 (775) 58 0611</a></u></strong> (для абонентов О! и
+                        Megacom).</p>
+
+                    <p>Факс: +996 (312) 900 585</p>
+
+                    <p>Е-mail: office@beeline.kg</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row contact-row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea rows="5" id="message" class="form-control"></textarea>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Footer -->
+<footer class="footer bg-dark">
+    <div class="container copyright text-center ">
+        <small class="">Copyright © Your Website</small>
+    </div>
+</footer>
+<!-- Footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
